@@ -2,12 +2,15 @@
 
 <div align="center">
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-stellarpos.netlify.app-00C7B7.svg?logo=netlify&logoColor=white)](https://stellarpos.netlify.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Stellar Network](https://img.shields.io/badge/Stellar-Testnet-08B5E5.svg?logo=stellar&logoColor=white)](https://stellar.org)
 [![Soroban](https://img.shields.io/badge/Soroban_Smart_Contracts-22.0-9B59B6.svg?logo=stellar&logoColor=white)](https://soroban.stellar.org)
 [![USDC](https://img.shields.io/badge/Settlement-USDC_%2F_XLM-2775CA.svg)](https://www.circle.com/en/usdc)
 
 **Institutional-grade Point-of-Sale (POS) & Payment Infrastructure on the Stellar Blockchain**
+
+🌐 **Live Application**: **[https://stellarpos.netlify.app](https://stellarpos.netlify.app)**
 
 [Explore Repositories](#-organization-repositories) • [Architecture](#-ecosystem-architecture) • [Roadmap](#-roadmap--milestones) • [Contributing](#-contributing)
 
@@ -29,9 +32,9 @@ Traditional merchant point-of-sale systems are hindered by high card processing 
 
 ## 🏛 Organization Repositories
 
-| Repository | Description | Tech Stack | Status |
+| Repository | Description | Tech Stack | Live / Status |
 | :--- | :--- | :--- | :--- |
-| 🖥️ **[POS-Frontend](https://github.com/StelarPOS/POS-Frontend)** | Merchant POS UI, Terminal Keypad, SEP-0007 QR Payment Modal, Dashboard & Ledger | React 18, Vite, Tailwind CSS, Lucide | 🚀 Active (~15% Scope) |
+| 🖥️ **[POS-Frontend](https://github.com/StelarPOS/POS-Frontend)** | Merchant POS UI, Terminal Keypad, SEP-0007 QR Payment Modal, Dashboard & Ledger | React 18, Vite, Tailwind CSS, Lucide | 🚀 **[Live Demo](https://stellarpos.netlify.app)** (~15% Scope) |
 | ⚡ **[POS-Backend](https://github.com/StelarPOS/POS-Backend)** | Express API, Stellar Horizon SDK, PostgreSQL Prisma ORM, Transaction Verification | Node.js, Express, Prisma, Stellar SDK | ⚡ Active (~2% Scope) |
 | 🦀 **[POS-Contract](https://github.com/StelarPOS/POS-Contract)** | Soroban Rust Smart Contract for persistent on-chain payment recording | Rust, Soroban SDK 22.0 | 🦀 Active (~3% Scope) |
 
@@ -67,6 +70,7 @@ sequenceDiagram
   - [x] Express.js API foundation (`GET /api/health`, `GET /api/payments/test`).
   - [x] PostgreSQL Prisma schema with `Payment` model.
   - [x] Soroban Rust smart contract (`record_payment`, `get_payment`) with passing unit tests.
+  - [x] Deployed live on Netlify: [https://stellarpos.netlify.app](https://stellarpos.netlify.app)
 - [ ] **Milestone 2 (~40%)**: Real-time Horizon payment stream listener & live PostgreSQL persistence.
 - [ ] **Milestone 3 (~60%)**: Merchant authentication, multi-store accounts, API keys & webhooks.
 - [ ] **Milestone 4 (~80%)**: Advanced analytics, automated refunds, and currency conversion.
